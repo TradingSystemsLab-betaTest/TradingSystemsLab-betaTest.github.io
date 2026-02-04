@@ -2476,10 +2476,9 @@ input, select, textarea {
 
 /* Banner */
 
-	
 		#banner {
 		    position: relative;
-		    background-image: url('images/images/foto_n1.jpg');
+		    background-image: url('../images/foto_n1.jpg');
 		    background-size: cover;          /* Copre tutta l'area */
 		    background-position: center;     /* Centra l'immagine */
 		    background-repeat: no-repeat;    /* Non ripete */
