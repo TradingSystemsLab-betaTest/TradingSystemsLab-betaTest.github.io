@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Metodologia di Sviluppo Strategie | TradingSystemsLab</title>
+    <meta name="description"
+        content="Scopri la nostra metodologia rigorosa per lo sviluppo e il backtesting di strategie di trading sistematiche per Forex e Crypto.">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="logo container">
+                <div>
+                    <h1><a href="index.html" id="logo">Trading</a></h1>
+                    <p>strategies for forex and crypto</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Strategie</a>
+                    <ul>
+                        <li><a href="strategie-forex.html">Forex</a></li>
+                        <li><a href="strategie-crypto.html">Criptovalute</a></li>
+                        <li><a href="strategie-tutte.html">Tutte le Strategie</a></li>
+                    </ul>
+                </li>
+                <li><a href="backtesting.html">Backtesting & Risultati</a></li>
+                <li class="current"><a href="metodologia.html">Metodologia</a></li>
+                <li><a href="blog.html">Blog & Analisi</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+                <div class="row gtr-200">
+                    <div class="col-12">
+
+                        <!-- Content -->
+                        <section class="box article-list">
+                            <h2 class="major"><span>La Nostra Metodologia</span></h2>
+                            <p class="subtitle">Trasparenza, rigore e replicabilità sono i pilastri del nostro approccio
+                                allo sviluppo di strategie sistemiche.</p>
+
+                            <!-- Sezione 1: Introduzione -->
+                            <article id="intro" class="box excerpt">
+                                <header>
+                                    <h3>Perché la Metodologia è Fondamentale</h3>
+                                </header>
+                                <p>
+                                    Nel trading sistematico, la differenza tra un'idea interessante e una strategia
+                                    affidabile risiede nel <strong>processo</strong>. Una metodologia chiara e
+                                    strutturata serve a:
+                                </p>
+                                <ul style="display: inline-block; text-align: left; margin: 1em auto;">
+                                    <li><strong>Eliminare l'ambiguità:</strong> Ogni segnale deve essere generato da
+                                        regole oggettive.</li>
+                                    <li><strong>Prevenire l'overfitting:</strong> Evitare di creare strategie che
+                                        funzionano "solo sul passato".</li>
+                                    <li><strong>Gestire il rischio in modo coerente:</strong> La sopravvivenza nel lungo
+                                        termine dipende da questo.</li>
+                                    <li><strong>Permettere la replicabilità:</strong> Altri dovrebbero poter ottenere
+                                        risultati simili seguendo gli stessi passi.</li>
+                                </ul>
+                                <p>
+                                    Di seguito descriviamo ogni fase del nostro workflow.
+                                </p>
+                            </article>
+
+                            <!-- Sezione 2: Sviluppo -->
+                            <article id="sviluppo" class="box excerpt">
+                                <header>
+                                    <h3>1. Sviluppo dell'Idea & Definizione delle Regole</h3>
+                                </header>
+                                <p>
+                                    Partiamo da un'ipotesi di mercato (es. "i trend tendono a persistere") e la
+                                    traduciamo in <strong>regole operative completamente oggettive</strong>.
+                                </p>
+                                <p>
+                                    <strong>Cosa definiamo esplicitamente:</strong>
+                                </p>
+                                <ul style="display: inline-block; text-align: left; margin: 1em auto;">
+                                    <li><strong>Condizioni di Ingresso (Entry):</strong> Il set preciso di condizioni
+                                        che devono verificarsi per aprire una posizione.</li>
+                                    <li><strong>Condizioni di Uscita (Exit):</strong> Sia per realizzare un profitto
+                                        (Take Profit) che per limitare una perdita (Stop Loss).</li>
+                                    <li><strong>Filtri Aggiuntivi:</strong> Condizioni che devono essere vere affinché
+                                        il segnale sia valido (es. orario, volatilità).</li>
+                                    <li><strong>Dimensionamento della Posizione (Position Sizing):</strong> Quanto
+                                        capitale rischiamo per ogni trade (es. 1% del portafoglio).</li>
+                                </ul>
+                                <p>
+                                    A questo punto, la strategia è un algoritmo che può essere codificato e testato.
+                                </p>
+                            </article>
+
+                            <!-- Sezione 3: Backtesting -->
+                            <article id="backtesting" class="box excerpt">
+                                <header>
+                                    <h3>2. Backtesting Stretto & Analisi delle Performance</h3>
+                                </header>
+                                <p>
+                                    Eseguiamo il backtesting su <strong>dati storici di qualità</strong>
+                                    (preferibilmente tick data o OHLC ad alta frequenza), considerando costi realistici
+                                    (spread, commissioni).
+                                </p>
+                                <p>
+                                    <strong>Il nostro processo di test:</strong>
+                                </p>
+                                <ol style="display: inline-block; text-align: left; margin: 1em auto;">
+                                    <li><strong>Test In-Sample (IS):</strong> Sviluppo iniziale e ottimizzazione
+                                        parametri su un primo set di dati.</li>
+                                    <li><strong>Walk-Forward Analysis (WFA) o Out-of-Sample (OOS) Testing:</strong>
+                                        Validazione su un periodo di dati <em>non usato</em> durante lo sviluppo. Questo
+                                        è il test più importante per evitare l'overfitting.</li>
+                                    <li><strong>Stress Test:</strong> Come si comporta la strategia in periodi di crisi
+                                        di mercato (es. 2008, Marzo 2020)?</li>
+                                </ol>
+                                <p>
+                                    <strong>Limitazioni che teniamo in considerazione:</strong> Il backtesting
+                                    presuppone esecuzioni di ordini perfette e una liquidità infinita, condizioni non
+                                    sempre reali. Per questo i risultati vanno interpretati con cautela.
+                                </p>
+                            </article>
+
+                            <!-- Sezione 4: Gestione del Rischio -->
+                            <article id="risk" class="box excerpt">
+                                <header>
+                                    <h3>3. Gestione del Rischio Integrata</h3>
+                                </header>
+                                <p>
+                                    La gestione del rischio non è un'opzione, è parte integrante della strategia.
+                                </p>
+                                <p>
+                                    <strong>I nostri principi fondamentali:</strong>
+                                </p>
+                                <ul style="display: inline-block; text-align: left; margin: 1em auto;">
+                                    <li><strong>Stop Loss Obbligatorio:</strong> Ogni trade ha un massimo rischio
+                                        predeterminato.</li>
+                                    <li><strong>Rischio per Trade Costante (%):</strong> Rischiamo una percentuale fissa
+                                        del capitale (es. 0.5%-2%) per trade. Questo adatta automaticamente la
+                                        dimensione della posizione alla volatilità dello strumento.</li>
+                                    <li><strong>Correlazione:</strong> Evitiamo di avere strategie che operano sullo
+                                        stesso concetto di mercato per ridurre il rischio di portafoglio.</li>
+                                    <li><strong>Drawdown Massimo Tollerabile:</strong> Definiamo un livello di perdita
+                                        massima oltre il quale la strategia verrebbe fermata e riesaminata.</li>
+                                </ul>
+                            </article>
+
+                            <!-- Sezione 5: Metriche -->
+                            <article id="metriche" class="box excerpt">
+                                <header>
+                                    <h3>4. Metriche di Performance & Valutazione</h3>
+                                </header>
+                                <p>
+                                    Non guardiamo solo al profitto totale. Una strategia robusta deve performare bene su
+                                    molte metriche.
+                                </p>
+                                <div class="table-wrapper">
+                                    <table class="default">
+                                        <thead>
+                                            <tr>
+                                                <th>Metrica</th>
+                                                <th>Descrizione</th>
+                                                <th>Cosa Cerchiamo</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Sharpe Ratio</strong></td>
+                                                <td>Rendimento aggiustato per il rischio (volatilità).</td>
+                                                <td>> 1.0 (idealmente > 1.5)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Max Drawdown (MDD)</strong></td>
+                                                <td>La massima perdita dal picco al ventre dell'equity curve.</td>
+                                                <td>Accettabile in base al profilo di rischio (es. < 20%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Win Rate</strong></td>
+                                                <td>Percentuale di trade vincenti.</td>
+                                                <td>Consistente, ma non essenziale. Una WR bassa con un alto profitto
+                                                    per trade è accettabile.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Profit Factor</strong></td>
+                                                <td>Totale Profitti / Totale Perdite.</td>
+                                                <td>> 1.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Expectancy</strong></td>
+                                                <td>Profitto medio atteso per trade (in $ o %).</td>
+                                                <td>Positiva e stabile nel tempo.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>
+                                    Una strategia deve avere un <strong>bilancio accettabile</strong> tra queste
+                                    metriche. Una Sharpe alta ma un Max DD elevatissimo potrebbe essere inaccettabile.
+                                </p>
+                            </article>
+
+                            <!-- Sezione 6: Conclusione -->
+                            <article class="box excerpt">
+                                <header>
+                                    <h3>Conclusione: Un Processo Iterativo</h3>
+                                </header>
+                                <p>
+                                    Lo sviluppo di una strategia non è lineare. È un <strong>processo iterativo</strong>
+                                    dove i risultati del backtesting possono portare a ri-definire le regole, per poi
+                                    testare di nuovo.
+                                </p>
+                                <p>
+                                    L'obiettivo finale non è trovare la "strategia perfetta" (che non esiste), ma
+                                    sviluppare sistemi con un <strong>edge statisticamente significativo</strong> nel
+                                    passato, una gestione del rischio robusta, e una comprensione chiara delle
+                                    condizioni di mercato in cui è probabile che funzionino o falliscano.
+                                </p>
+                                <p>
+                                    Tutte le strategie pubblicate su questo sito hanno seguito questo percorso.
+                                </p>
+                            </article>
+
+                            <!-- Link alle altre pagine -->
+                            <footer style="text-align: center; margin-top: 3em;">
+                                <a href="backtesting.html" class="button">Vedi i Risultati di Backtesting</a>
+                                &nbsp;&nbsp;
+                                <a href="strategie-tutte.html" class="button alt">Esplora le Strategie Sviluppate</a>
+                            </footer>
+
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <!-- COPIA QUI L'IDENTICO FOOTER DELLA HOMEPAGE -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row gtr-200">
+                    <div class="col-12">
+                        <section>
+                            <h2 class="major"><span>Avviso Importante</span></h2>
+                            <p>
+                                <strong>Disclaimer di Rischio:</strong> Il trading di Forex, CFD e criptovalute comporta
+                                un <strong>elevato livello di rischio</strong> e potrebbe non essere adatto a tutti gli
+                                investitori. Esiste la possibilità di subire perdite superiori al deposito iniziale.
+                                <strong>Le performance passate non sono indicative di risultati futuri.</strong>
+                            </p>
+                            <p>
+                                Le strategie e le analisi presentate su questo sito sono a scopo <strong>puramente
+                                    educativo e informativo</strong>. Non costituiscono consulenza finanziaria,
+                                sollecitazione all'investimento o offerta di alcun servizio. L'utente si assume la piena
+                                responsabilità delle proprie decisioni di trading.
+                            </p>
+                            <p>
+                                <a href="disclaimer.html" class="button small">Leggi il Disclaimer Completo</a>
+                            </p>
+                        </section>
+                    </div>
+                    <div class="col-12">
+                        <section>
+                            <h2 class="major"><span>Contatti & Community</span></h2>
+                            <p>
+                                Per domande sulla metodologia, segnalazioni di errori, o proposte di collaborazione.
+                            </p>
+                            <ul class="contact">
+                                <li><a class="icon brands fa-twitter" href="https://twitter.com/TradingSysLab"
+                                        target="_blank"><span class="label">Twitter / X</span></a></li>
+                                <li><a class="icon brands fa-telegram" href="https://t.me/tradingsystemslab"
+                                        target="_blank"><span class="label">Telegram Channel</span></a></li>
+                                <li><a class="icon brands fa-github" href="https://github.com/tradingsystemslab"
+                                        target="_blank"><span class="label">GitHub</span></a></li>
+                                <li><a class="icon solid fa-envelope"
+                                        href="mailto:info@tradingsystemslab.example.com"><span
+                                            class="label">Email</span></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div id="copyright">
+                    <ul class="menu">
+                        <li>© TradingSystemsLab. Tutti i contenuti testuali sono riservati.</li>
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
