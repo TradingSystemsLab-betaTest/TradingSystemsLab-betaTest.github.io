@@ -2477,14 +2477,12 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-	    position: relative;
-	    background-image: url('https://tradingsystemslab-betatest.github.io/images/foto_n1.jpg'); /* PERCORSO IMMAGINE */
-	    background-size: cover;          /* Copre tutta l'area */
-	    background-position: center;     /* Centra l'immagine */
-	    background-repeat: no-repeat;    /* Non ripete l'immagine */
-	    z-index: 1;
-	    padding: 11em 0;
-	}
+		    position: relative;
+		    /* RIMUOVI background-image da qui */
+		    background: none; 
+		    z-index: 1;
+		    padding: 11em 0;
+		}
 
 		#banner .content {
 			position: relative;
