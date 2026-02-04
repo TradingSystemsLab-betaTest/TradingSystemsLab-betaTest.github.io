@@ -2486,7 +2486,7 @@ input, select, textarea {
 
 		#banner .content {
 			position: relative;
-			background-color: rgba(21, 28, 23, 0.85);
+			background: none;
 			background-image: url("images/overlay.png"), url("images/highlight.png");
 			background-position: top left, center center;
 			background-size: auto, 100% 250%;
@@ -3103,36 +3103,45 @@ input, select, textarea {
 			}
 
 	}
-/* ===== IMMAGINE SFONDO PER TUTTA LA HOME PAGE ===== */
-body.homepage #page-wrapper {
-    background-image: url('https://tradingsystemslab-betatest.github.io/images/foto_n1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/* IMMAGINE SU TUTTA LA PAGINA */
+body.homepage {
+    background-image: url('https://tradingsystemslab-betatest.github.io/images/foto_n1.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
 }
 
-/* Overlay scuro su tutto lo sfondo */
-body.homepage #page-wrapper::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 0;
+/* Rimuovi tutti gli sfondi bianchi che coprono */
+body.homepage #page-wrapper,
+#main,
+#footer,
+.box,
+.container {
+    background: transparent !important;
 }
 
-/* Il banner ora avrà sfondo trasparente e si sovrapporrà */
+/* Banner trasparente */
 #banner {
-    background: none;
+    background: none !important;
 }
 
-/* Migliora la leggibilità del testo nel banner */
+#banner .content {
+    background: none !important;
+}
+
+/* Testo bianco per leggibilità */
 #banner .content h2,
 #banner .content p,
-#banner .content li {
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+#banner .content li,
+#banner .content strong {
+    color: #fff !important;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8) !important;
+}
+
+/* Bottone visibile */
+#banner .content .button {
+    background-color: #b1ddab !important;
+    color: #000 !important;
+    border: none !important;
 }
