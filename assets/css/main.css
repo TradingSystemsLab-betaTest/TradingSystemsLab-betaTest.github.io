@@ -2476,11 +2476,13 @@ input, select, textarea {
 
 /* Banner */
 
-	/* Banner */
+	
 		#banner {
 		    position: relative;
-		    background: #152238; /* Blu notte tecnologico */
-		    background-image: none; /* Disabilita le immagini esistenti */
+		    background-image: url('images/images/foto_n1.jpg');
+		    background-size: cover;          /* Copre tutta l'area */
+		    background-position: center;     /* Centra l'immagine */
+		    background-repeat: no-repeat;    /* Non ripete */
 		    z-index: 1;
 		    padding: 11em 0;
 		}
