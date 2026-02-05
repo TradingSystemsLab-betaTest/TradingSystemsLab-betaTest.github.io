@@ -3159,9 +3159,7 @@ body.homepage #main h4,
 body.homepage #main p,
 body.homepage #main li,
 body.homepage #main strong,
-body.homepage .box:not(#banner .content) h2,
-body.homepage .box:not(#banner .content) h3,
-body.homepage .box:not(#banner .content) p {
+
     color: #ffffff !important;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
 }
