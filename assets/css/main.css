@@ -3103,45 +3103,68 @@ input, select, textarea {
 			}
 
 	}
-/* IMMAGINE SU TUTTA LA PAGINA */
+/* IMMAGINE SU TUTTA LA PAGINA - VERSIONE MIGLIORATA */
 body.homepage {
     background-image: url('https://TradingSystemsLab-betaTest.github.io/images/photo_3.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
+    /* Aggiungi un overlay scuro semi-trasparente sopra l'immagine */
+    position: relative;
+}
+/* Crea un overlay scuro per migliorare il contrasto */
+body.homepage::before {
+    content: '';
+    position: fixed; /* Fisso per coprire tutta la viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 20, 30, 0.65); /* Blu scuro al 65% di opacità. Regola (0.65) a piacere */
+    z-index: 0; /* Mettilo dietro al contenuto */
+    pointer-events: none; /* Permette di cliccare gli elementi sopra */
+}
+
+/* Assicurati che tutto il contenuto stia sopra l'overlay */
+body.homepage #page-wrapper {
+    position: relative;
+    z-index: 1;
 }
 
 /* Rimuovi tutti gli sfondi bianchi che coprono */
-body.homepage #page-wrapper,
-#main,
-#footer,
-.box,
-.container {
+body.homepage #main,
+body.homepage #footer,
+body.homepage .box,
+body.homepage .container {
     background: transparent !important;
 }
 
 /* Banner trasparente */
-#banner {
+body.homepage #banner {
     background: none !important;
 }
 
-#banner .content {
+body.homepage #banner .content {
     background: none !important;
 }
 
-/* Testo bianco per leggibilità */
-#banner .content h2,
-#banner .content p,
-#banner .content li,
-#banner .content strong {
-    color: #fff !important;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8) !important;
+/* Testo BIANCO PURO con ombra leggera per massima leggibilità */
+body.homepage #banner .content h2,
+body.homepage #banner .content p,
+body.homepage .box h2,
+body.homepage .box h3,
+body.homepage .box p,
+body.homepage .box li,
+body.homepage strong {
+    color: #ffffff !important; /* Bianco puro */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7) !important; /* Ombra più definita */
 }
 
-/* Bottone visibile */
-#banner .content .button {
-    background-color: #b1ddab !important;
-    color: #000 !important;
+/* Bottone più visibile e contrastato */
+body.homepage #banner .content .button {
+    background-color: #4dc0fa !important; /* Azzurro acceso al posto del verde chiaro */
+    color: #ffffff !important;
     border: none !important;
+    font-weight: bold;
 }
