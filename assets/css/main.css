@@ -3103,11 +3103,11 @@ input, select, textarea {
 			}
 
 	}
-/* ===== SOLUZIONE DEFINITIVA PER LEGGIBILITA' ===== */
-/* 1. OVERLAY SCURO OBBLIGATORIO sull'immagine */
+/* ===== SOLUZIONE MIRATA: Modifica tutto TRENNE il titolo principale ===== */
+/* 1. Overlay scuro per la pagina (dietro tutto) */
 body.homepage {
     position: relative;
-    background-image: url('https://TradingSystemsLab-betaTest.github.io/images/foto_n1.jpg') !important;
+    background-image: url('https://TradingSystemsLab-betaTest.github.io/images/photo_3.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3121,52 +3121,55 @@ body.homepage::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(5, 10, 20, 0.65) !important; /* Overlay molto scuro */
+    background: rgba(5, 10, 20, 0.75) !important;
     z-index: 0;
     pointer-events: none;
 }
 
-/* 2. FORZA tutto il contenuto SOPRA l'overlay */
-body.homepage #page-wrapper,
-body.homepage #main,
-body.homepage #footer,
-body.homepage .container {
+/* 2. Contenitore principale SOPRA l'overlay */
+body.homepage #page-wrapper {
     position: relative;
-    z-index: 2 !important;
+    z-index: 2;
+}
+
+/* ===== IMPORTANTE: PRESERVA il banner/titolo ORIGINALE ===== */
+/* RIMUOVI l'overlay SOLO dal contenuto del titolo principale */
+body.homepage #banner .content::before {
+    display: none !important; /* Disabilita qualsiasi overlay locale */
+}
+body.homepage #banner .content {
+    background: none !important; /* Mantieni trasparenza */
+    /* NON applicare modifiche di colore qui - lascia lo stile originale */
+}
+/* Il titolo "Trading strategies..." manterrà automaticamente i colori originali definiti in #banner .content h2, p */
+
+/* ===== MODIFICA il resto della pagina per leggibilità ===== */
+
+/* 3. La sezione "Il Nostro Approccio", "Strategie in Vetrina" e "Approfondimenti" */
+body.homepage #main,
+body.homepage #main .container,
+body.homepage #main .box {
     background: transparent !important;
 }
 
-/* 3. BANNER completamente trasparente */
-body.homepage #banner {
-    background: none !important;
-    background-image: none !important;
-    position: relative;
-    z-index: 3;
-}
-
-body.homepage #banner .content {
-    background: none !important;
-    background-image: none !important;
-}
-
-/* 4. TESTO BIANCO con OMBRA FORTE (obbligatorio) */
-body.homepage #banner .content h2,
-body.homepage #banner .content p,
-body.homepage h1, 
-body.homepage h2, 
-body.homepage h3, 
-body.homepage h4,
-body.homepage p,
-body.homepage li,
-body.homepage strong,
-body.homepage .box * {
+/* 4. Migliora il contrasto del testo in TUTTE le sezioni TRENNE il titolo principale (#banner) */
+body.homepage #main h2,
+body.homepage #main h3,
+body.homepage #main h4,
+body.homepage #main p,
+body.homepage #main li,
+body.homepage #main strong,
+body.homepage .box:not(#banner .content) h2,
+body.homepage .box:not(#banner .content) h3,
+body.homepage .box:not(#banner .content) p {
     color: #ffffff !important;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9) !important;
-    font-weight: 600 !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
 }
 
-/* 5. SCHEDE delle strategie con sfondo semi-trasparente */
-body.homepage .box {
+/* 5. Schede delle strategie con sfondo semitrasparente */
+body.homepage #main .box.feature,
+body.homepage #main .box.post,
+body.homepage #main .box.highlight {
     background: rgba(30, 40, 60, 0.85) !important;
     backdrop-filter: blur(5px);
     border-radius: 10px;
@@ -3175,19 +3178,19 @@ body.homepage .box {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* 6. BOTTONE ad alto contrasto */
-body.homepage #banner .content .button {
+/* 6. Footer */
+body.homepage #footer {
+    background: transparent !important;
+}
+body.homepage #footer h2,
+body.homepage #footer p {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* 7. Pulsanti nelle sezioni modificate */
+body.homepage #main .button {
     background: linear-gradient(135deg, #4dc0fa 0%, #2a9ee8 100%) !important;
     color: white !important;
     border: none !important;
-    font-weight: bold;
-    font-size: 1.2em;
-    padding: 15px 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-body.homepage #banner .content .button:hover {
-    background: linear-gradient(135deg, #2a9ee8 0%, #1a8ed8 100%) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
