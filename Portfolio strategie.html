@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Portfolio Strategie | TradingSystemsLab</title>
+    <meta name="description"
+        content="Risultati dettagliati di backtesting delle nostre strategie di trading. Esplora equity curve, metriche di performance e impara a interpretare i dati.">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="logo container">
+                <div>
+                    <h1><a href="index.html" id="logo">Trading</a></h1>
+                    <p>strategies for forex and crypto</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Strategie</a>
+                    <ul>
+                        <li><a href="strategie-forex.html">Forex</a></li>
+                        <li><a href="strategie-crypto.html">Criptovalute</a></li>
+
+                    </ul>
+                </li>
+                <li class="current"><a href="backtesting.html">Backtesting & Risultati</a></li>
+                <li><a href="metodologia.html">Metodologia</a></li>
+                <li><a href="blog.html">Blog & Analisi</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+                <div class="row gtr-200">
+                    <div class="col-12">
+
+                        <!-- Content -->
+                        <section class="box article-list">
+                            <h2 class="major"><span>Backtesting & Risultati</span></h2>
+                            <p class="subtitle">Dati concreti, analisi trasparenti. Qui trovi i risultati storici delle
+                                nostre strategie e una guida per interpretarli.</p>
+
+                            <!-- Sezione 1: Introduzione -->
+                            <article class="box excerpt">
+                                <header>
+                                    <h3>Dall'Idea ai Numeri: Il Verdetto del Backtesting</h3>
+                                </header>
+                                <p>
+                                    In questa pagina presentiamo i <strong>risultati oggettivi</strong> del backtesting
+                                    per le strategie che sviluppiamo. Ogni set di dati include le metriche chiave di
+                                    performance e i grafici più significativi (equity curve, drawdown).
+                                </p>
+                                <p>
+                                    <strong>Ricorda:</strong> Questi risultati sono <em>storici e teorici</em>. Servono
+                                    a valutare la validità di un'idea e la sua robustezza in diverse condizioni di
+                                    mercato, <strong>non a garantire profitti futuri</strong>. Per una spiegazione
+                                    completa del nostro metodo di test, visita la pagina <a
+                                        href="metodologia.html#backtesting">Metodologia</a>.
+                                </p>
+                            </article>
+
+                            <!-- Sezione 2: Come Leggere i Risultati -->
+                            <article class="box excerpt">
+                                <header>
+                                    <h3>Come Interpretare un Report di Backtesting</h3>
+                                </header>
+                                <p>
+                                    Prima di immergerti nei numeri, è fondamentale sapere cosa guardare. Un buon report
+                                    va oltre il semplice "Profitto Totale".
+                                </p>
+                                <div class="row gtr-200">
+                                    <div class="col-6 col-12-medium">
+                                        <h4>📈 I Grafici Principali</h4>
+                                        <ul style="text-align: left;">
+                                            <li><strong>Equity Curve:</strong> Mostra l'andamento del capitale nel
+                                                tempo. Cerchiamo una crescita <em>relativamente</em> costante, non
+                                                lineare. Ampie oscillazioni indicano alta volatilità.</li>
+                                            <li><strong>Drawdown (Grafico):</strong> Mostra l'entità e la durata delle
+                                                perdite rispetto al picco precedente. È una misura diretta del dolore
+                                                psicologico e del rischio.</li>
+                                            <li><strong>Distribuzione dei Trade:</strong> Un istogramma che mostra
+                                                quanto sono frequenti i trade vincenti/perdenti e la loro entità media.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 col-12-medium">
+                                        <h4>📊 Le Metriche Chiave</h4>
+                                        <ul style="text-align: left;">
+                                            <li><strong>Sharpe Ratio & Sortino Ratio:</strong> Rendimento aggiustato per
+                                                il rischio. >1 è generalmente buono.</li>
+                                            <li><strong>Max Drawdown (MDD %):</strong> La peggior perdita mai
+                                                registrata. Definisce il picco di rischio della strategia.</li>
+                                            <li><strong>Profit Factor (PF):</strong> (Profitti Lordi / Perdite Lorde).
+                                                PF > 1.5 indica un buon "edge".</li>
+                                            <li><strong>Win Rate % & Expectancy:</strong> La prima dice quanti trade
+                                                vincono, la seconda quanto si guadagna in media per trade (in %
+                                                rischio).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>
+                                    Una strategia solida dovrebbe avere un <strong>bilancio positivo tra diverse
+                                        metriche</strong>, non eccellere in una sola a discapito delle altre.
+                                </p>
+                            </article>
+
+                            <!-- Sezione 3: Esempi di Backtesting -->
+                            <article class="box excerpt">
+                                <header>
+                                    <h3>Esempi di Risultati di Backtesting</h3>
+                                    <p>Strategie reali testate seguendo la nostra <a
+                                            href="metodologia.html">metodologia</a>.</p>
+                                </header>
+
+                                <!-- Esempio 1 -->
+                                <h4 id="esempio1">Esempio 1: Trend Following su EUR/USD (H1)</h4>
+                                <div class="row gtr-200">
+                                    <div class="col-6 col-12-medium">
+                                        <span class="image fit"><img
+                                                src="https://placehold.co/400x300/003366/ffffff?text=Forex+Strategy"
+                                                alt="Equity Curve Strategia EUR/USD" /></span>
+                                        <p><em>Equity Curve e Drawdown (2019-2024)</em></p>
+                                    </div>
+                                    <div class="col-6 col-12-medium">
+                                        <div class="table-wrapper">
+                                            <table class="default">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Metrica</th>
+                                                        <th>Valore</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><strong>Profitto Netto</strong></td>
+                                                        <td>+14,320 pips</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Sharpe Ratio</strong></td>
+                                                        <td>1.42</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Max Drawdown</strong></td>
+                                                        <td>-12.5%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Profit Factor</strong></td>
+                                                        <td>1.87</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Win Rate</strong></td>
+                                                        <td>41%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Totale Trade</strong></td>
+                                                        <td>247</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Expectancy</strong></td>
+                                                        <td>+58 pips/trade</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p><strong>Analisi:</strong> Strategia a bassa frequenza con un ottimo Profit
+                                            Factor e uno Sharpe solido. Il Win Rate basso (41%) è compensato da un'alta
+                                            Expectancy, tipico dei sistemi trend following. Il drawdown del 12.5% è
+                                            gestibile.</p>
+                                        <a href="strategia-trend-ma.html" class="button small">Vedi Dettagli
+                                            Strategia</a>
+                                    </div>
+                                </div>
+                                <hr />
+
+                                <!-- Esempio 2 -->
+                                <h4 id="esempio2">Esempio 2: Mean Reversion su Indice (S&P 500 E-mini)</h4>
+                                <div class="row gtr-200">
+                                    <div class="col-6 col-12-medium">
+                                        <span class="image fit"><img
+                                                src="https://placehold.co/400x300/003366/ffffff?text=Forex+Strategy"
+                                                alt="Equity Curve Strategia S&P 500" /></span>
+                                        <p><em>Equity Curve e Drawdown (2015-2024)</em></p>
+                                    </div>
+                                    <div class="col-6 col-12-medium">
+                                        <div class="table-wrapper">
+                                            <table class="default">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Metrica</th>
+                                                        <th>Valore</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><strong>Profitto Netto</strong></td>
+                                                        <td>+$48,500 (su 1 contratto)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Sharpe Ratio</strong></td>
+                                                        <td>1.15</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Max Drawdown</strong></td>
+                                                        <td>-$9,800 (-19.6%)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Profit Factor</strong></td>
+                                                        <td>1.65</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Win Rate</strong></td>
+                                                        <td>68%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Totale Trade</strong></td>
+                                                        <td>512</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Avg Win / Avg Loss</strong></td>
+                                                        <td>1.1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p><strong>Analisi:</strong> Strategia ad alta frequenza con un alto Win Rate,
+                                            tipico della mean reversion. Lo Sharpe è accettabile, il drawdown è
+                                            moderato. Nota: Il profitto per trade è piccolo, il che la rende sensibile
+                                            ai costi di transazione.</p>
+                                        <a href="strategia-mean-reversion.html" class="button small">Vedi Dettagli
+                                            Strategia</a>
+                                    </div>
+                                </div>
+                                <hr />
+
+                                <!-- Nota Esempi -->
+                                <div class="box" style="background-color: #f5f5f5; padding: 1em;">
+                                    <p><strong>🔍 Nota Sugli Esempi:</strong> Questi sono esempi educativi. I parametri
+                                        e le condizioni di mercato cambiano. I risultati passati <strong>non
+                                            garantiscono</strong> performance future. Le strategie presentate nel nostro
+                                        archivio hanno report completi e aggiornati.</p>
+                                </div>
+
+                            </article>
+
+                            <!-- Sezione 4: Avvertenze Finali -->
+                            <article class="box excerpt">
+                                <header>
+                                    <h3>Avvertenze Cruciali sul Backtesting</h3>
+                                </header>
+                                <p>
+                                    Il backtesting è uno strumento potente ma imperfetto. Ecco le principali
+                                    <strong>insidie</strong> da tenere a mente quando si valutano (o si creano)
+                                    risultati di backtesting:
+                                </p>
+                                <ul style="display: inline-block; text-align: left; margin: 1em auto;">
+                                    <li><strong>Overfitting / Curve-Fitting:</strong> La strategia è stata
+                                        eccessivamente ottimizzata sul passato e fallirà su dati nuovi. Combattiamo
+                                        questo con l'<strong>Out-of-Sample Testing</strong>.</li>
+                                    <li><strong>Slippage e Costi Non Reali:</strong> I test spesso assumono esecuzioni
+                                        perfette a prezzi di bid/ask ideali. Nel mondo reale, spread, commissioni e
+                                        ritardi d'esecuzione erodono i profitti.</li>
+                                    <li><strong>Look-Ahead Bias:</strong> Errore di programmazione in cui la strategia
+                                        "vede" dati futuri. Il nostro codice viene controllato per evitarlo.</li>
+                                    <li><strong>Sopravvivenza al Campionamento (Survivorship Bias):</strong> Testare
+                                        solo su strumenti che esistono ancora oggi, escludendo quelli falliti. Usiamo
+                                        dati storici che includono strumenti non più esistenti dove possibile.</li>
+                                </ul>
+                                <p>
+                                    Per questi motivi, <strong>nessun backtesting è una prova definitiva</strong>. È
+                                    un'indicazione, uno stress test di un'idea. La prova reale avviene solo con il
+                                    trading live, partendo con capitali molto piccoli (<strong>Paper Trading</strong>
+                                    prima, poi <strong>Live con dimensioni ridotte</strong>).
+                                </p>
+                            </article>
+
+                            <!-- Call to Action -->
+                            <footer style="text-align: center; margin-top: 3em;">
+                                <a href="strategie-tutte.html" class="button large">Esplora l'Archivio Completo delle
+                                    Strategie</a>
+                                <p style="margin-top: 1em;">Ogni strategia nell'archivio include un report di
+                                    backtesting dettagliato.</p>
+                            </footer>
+
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row gtr-200">
+                    <div class="col-12">
+                        <section>
+                            <h2 class="major"><span>Avviso Importante</span></h2>
+                            <p>
+                                <strong>Disclaimer di Rischio:</strong> Il trading di Forex, CFD e criptovalute comporta
+                                un <strong>elevato livello di rischio</strong> e potrebbe non essere adatto a tutti gli
+                                investitori. Esiste la possibilità di subire perdite superiori al deposito iniziale.
+                                <strong>Le performance passate non sono indicative di risultati futuri.</strong>
+                            </p>
+                            <p>
+                                Le strategie e le analisi presentate su questo sito sono a scopo <strong>puramente
+                                    educativo e informativo</strong>. Non costituiscono consulenza finanziaria,
+                                sollecitazione all'investimento o offerta di alcun servizio. L'utente si assume la piena
+                                responsabilità delle proprie decisioni di trading.
+                            </p>
+                            <p>
+                                <a href="disclaimer.html" class="button small">Leggi il Disclaimer Completo</a>
+                            </p>
+                        </section>
+                    </div>
+                    <div class="col-12">
+                        <section>
+                            <h2 class="major"><span>Contatti & Community</span></h2>
+                            <p>
+                                Per domande sulla metodologia, segnalazioni di errori, o proposte di collaborazione.
+                            </p>
+                            <ul class="contact">
+                                <li><a class="icon brands fa-twitter" href="https://twitter.com/TradingSysLab"
+                                        target="_blank"><span class="label">Twitter / X</span></a></li>
+                                <li><a class="icon brands fa-telegram" href="https://t.me/tradingsystemslab"
+                                        target="_blank"><span class="label">Telegram Channel</span></a></li>
+                                <li><a class="icon brands fa-github" href="https://github.com/tradingsystemslab"
+                                        target="_blank"><span class="label">GitHub</span></a></li>
+                                <li><a class="icon solid fa-envelope"
+                                        href="mailto:info@tradingsystemslab.example.com"><span
+                                            class="label">Email</span></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div id="copyright">
+                    <ul class="menu">
+                        <li>© TradingSystemsLab. Tutti i contenuti testuali sono riservati.</li>
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
