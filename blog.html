@@ -13,6 +13,94 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Stili aggiuntivi per l'archivio */
+        .archive-section {
+            margin-top: 4em;
+            padding-top: 2em;
+            border-top: 2px solid #eee;
+        }
+        
+        .archive-year {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin: 1.5em 0 0.5em 0;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .archive-month {
+            color: #34495e;
+            font-size: 1.2em;
+            margin: 1.2em 0 0.3em 0;
+            font-weight: 600;
+        }
+        
+        .archive-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0 0 1.5em 0;
+        }
+        
+        .archive-item {
+            padding: 0.6em 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .archive-item:hover {
+            background-color: #f9f9f9;
+            padding-left: 10px;
+            transition: all 0.2s ease;
+        }
+        
+        .archive-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            min-width: 90px;
+            text-align: right;
+        }
+        
+        .archive-link {
+            color: #2980b9;
+            text-decoration: none;
+            flex-grow: 1;
+        }
+        
+        .archive-link:hover {
+            color: #1a5276;
+            text-decoration: underline;
+        }
+        
+        .archive-toggle {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 0.8em 1.5em;
+            cursor: pointer;
+            font-weight: 600;
+            margin: 1em 0;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        
+        .archive-toggle:hover {
+            background: #e9ecef;
+        }
+        
+        @media (max-width: 768px) {
+            .archive-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .archive-date {
+                margin-top: 0.3em;
+                text-align: left;
+            }
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -102,32 +190,130 @@
                                     <span class="date">22 Gennaio 2026</span>
                                 </header>
                                 <p>
-                                    Una strategia può avere ottime metriche quantitative, ma se produce drawdown troppo lunghi o segnali troppo frequenti, l’operatore rischia di abbandonarla al momento sbagliato. Discutiamo il concetto di <strong>sostenibilità psicologica</strong>, uno dei tre pilastri della nostra selezione di portfolio. Come progettare sistemi che rispettino il profilo emotivo del trader e garantiscano disciplina nel lungo termine.
+                                    Una strategia può avere ottime metriche quantitative, ma se produce drawdown troppo lunghi o segnali troppo frequenti, l'operatore rischia di abbandonarla al momento sbagliato. Discutiamo il concetto di <strong>sostenibilità psicologica</strong>, uno dei tre pilastri della nostra selezione di portfolio. Come progettare sistemi che rispettino il profilo emotivo del trader e garantiscano disciplina nel lungo termine.
                                 </p>
                                 <footer>
                                     <a href="#psychology-systematic" class="button small">Continua a leggere</a>
                                 </footer>
                             </article>
 
-                            <!-- Articolo 5 -->
-                            <article class="box excerpt">
-                                <header>
-                                    <h3>Eventi Macroeconomici di Febbraio 2026: Cosa Monitorare nel Forex</h3>
-                                    <span class="date">15 Gennaio 2026</span>
-                                </header>
-                                <p>
-                                    Il calendario macro di febbraio include decisioni di banche centrali (Fed, BCE, BoJ), dati sull’occupazione USA e indici PMI. Questi eventi possono alterare la direzionalità e la volatilità delle coppie maggiori. Offriamo una panoramica degli appuntamenti chiave e suggerimenti su come <strong>adattare i filtri di volatilità e le dimensioni delle posizioni</strong> nelle strategie sistematiche per navigare periodi ad alta incertezza.
-                                </p>
-                                <footer>
-                                    <a href="#macro-feb2026" class="button small">Vedi il calendario</a>
-                                </footer>
-                            </article>
+                            <!-- Sezione Archivio -->
+                            <div class="archive-section" id="archivio">
+                                <h3 class="major"><span>Archivio News & Analisi</span></h3>
+                                <p>Tutti gli articoli pubblicati, ordinati cronologicamente.</p>
+                                
+                                <!-- Anno 2026 -->
+                                <h4 class="archive-year">2026</h4>
+                                
+                                <!-- Febbraio 2026 -->
+                                <h5 class="archive-month">Febbraio 2026</h5>
+                                <ul class="archive-list">
+                                    <li class="archive-item">
+                                        <a href="#portfolio-feb2026" class="archive-link">Analisi Performance Portfolio Forex – Febbraio 2026</a>
+                                        <span class="archive-date">07/02/2026</span>
+                                    </li>
+                                    <li class="archive-item">
+                                        <a href="#wfa-btc-breakout" class="archive-link">Walk‑Forward Analysis: Come Validare una Strategia Senza Overfitting</a>
+                                        <span class="archive-date">01/02/2026</span>
+                                    </li>
+                                </ul>
+                                
+                                <!-- Gennaio 2026 -->
+                                <h5 class="archive-month">Gennaio 2026</h5>
+                                <ul class="archive-list">
+                                    <li class="archive-item">
+                                        <a href="#crypto-volatility-2026" class="archive-link">Volatilità Crypto in Aumento: Opportunità e Rischi per il Momentum Trading</a>
+                                        <span class="archive-date">28/01/2026</span>
+                                    </li>
+                                    <li class="archive-item">
+                                        <a href="#psychology-systematic" class="archive-link">La Psicologia del Trading Sistematico: Perché la Sostenibilità Conta Più del Profitto</a>
+                                        <span class="archive-date">22/01/2026</span>
+                                    </li>
+                                    <li class="archive-item">
+                                        <a href="#macro-feb2026" class="archive-link">Eventi Macroeconomici di Febbraio 2026: Cosa Monitorare nel Forex</a>
+                                        <span class="archive-date">15/01/2026</span>
+                                    </li>
+                                    <li class="archive-item">
+                                        <a href="#backtest-optimization" class="archive-link">Ottimizzazione Parametrica: Tecniche Avanzate per il Backtesting</a>
+                                        <span class="archive-date">10/01/2026</span>
+                                    </li>
+                                </ul>
+                                
+                                <!-- Anno 2025 -->
+                                <h4 class="archive-year">2025</h4>
+                                
+                                <!-- Dicembre 2025 -->
+                                <h5 class="archive-month">Dicembre 2025</h5>
+                                <ul class="archive-list">
+                                    <li class="archive-item">
+                                        <a href="#review-2025" class="archive-link">Riepilogo Annuale 2025: Performance e Lezioni Apprese</a>
+                                        <span class="archive-date">30/12/2025</span>
+                                    </li>
+                                    <li class="archive-item">
+                                        <a href="#christmas-volatility" class="archive-link">Trading durante le Festività: Analisi della Volatilità Natalizia</a>
+                                        <span class="archive-date">18/12/2025</span>
+                                    </li>
+                                    <li class="archive-item">
+                                        <a href="#correlation-analysis" class="archive-link">Analisi Correlazioni Forex-Crypto: Diversificazione Reale o Illusoria?</a>
+                                        <span class="archive-date">05/12/2025</span>
+                                    </li>
+                                </ul>
+                                
+                                <!-- Novembre 2025 -->
+                                <h5 class="archive-month">Novembre 2025</h5>
+                                <ul class="archive-list">
+                                    <li class="archive-item">
+                                        <a href="#mean-reversion-guide" class="archive-link">Guida Pratica alle Strategie Mean-Reversion nel Forex</a>
+                                        <span class="archive-date">25/11/2025</span>
+                                    </li>
+                                    <li class="archive-item">
+                                        <a href="#crypto-regulation" class="archive-link">Impatto delle Nuove Regolamentazioni Crypto sul Trading Algoritmico</a>
+                                        <span class="archive-date">12/11/2025</span>
+                                    </li>
+                                    <li class="archive-item">
+                                        <a href="#risk-management-tools" class="archive-link">Strumenti Avanzati per la Gestione del Rischio in Portfolio Multi-Strategy</a>
+                                        <span class="archive-date">03/11/2025</span>
+                                    </li>
+                                </ul>
+                                
+                                <!-- Archivio più vecchio (collassabile) -->
+                                <div id="older-archive" style="display: none;">
+                                    <!-- Altri mesi del 2025 e anni precedenti -->
+                                    <h5 class="archive-month">Ottobre 2025</h5>
+                                    <ul class="archive-list">
+                                        <li class="archive-item">
+                                            <a href="#market-regimes" class="archive-link">Identificazione dei Regimi di Mercato per l'Adattamento Strategico</a>
+                                            <span class="archive-date">28/10/2025</span>
+                                        </li>
+                                        <li class="archive-item">
+                                            <a href="#fx-carry-trade" class="archive-link">Carry Trade Sistematico: Analisi di un Approccio Classico</a>
+                                            <span class="archive-date">15/10/2025</span>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h4 class="archive-year">2024</h4>
+                                    <h5 class="archive-month">Settembre 2024</h5>
+                                    <ul class="archive-list">
+                                        <li class="archive-item">
+                                            <a href="#first-strategy-published" class="archive-link">Pubblicazione della Prima Strategia sul Sito: Trend-Following EUR/USD</a>
+                                            <span class="archive-date">10/09/2024</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Bottone per mostrare/nascondere archivio più vecchio -->
+                                <div class="archive-toggle" onclick="toggleOlderArchive()">
+                                    <span id="archive-toggle-text">Mostra archivio completo (2024-2025)</span>
+                                </div>
+                            </div>
 
                             <!-- Link alle altre sezioni -->
                             <footer style="text-align: center; margin-top: 3em;">
                                 <a href="Portfolio-strategie.html" class="button">Vedi il Portfolio Attuale</a>
                                 &nbsp;&nbsp;
                                 <a href="metodologia.html" class="button alt">La Nostra Metodologia</a>
+                                &nbsp;&nbsp;
+                                <a href="#archivio" class="button alt">Vai all'Archivio</a>
                             </footer>
 
                         </section>
@@ -200,6 +386,29 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Funzione per mostrare/nascondere l'archivio più vecchio
+        function toggleOlderArchive() {
+            const olderArchive = document.getElementById('older-archive');
+            const toggleText = document.getElementById('archive-toggle-text');
+            
+            if (olderArchive.style.display === 'none' || olderArchive.style.display === '') {
+                olderArchive.style.display = 'block';
+                toggleText.textContent = 'Nascondi archivio precedente';
+            } else {
+                olderArchive.style.display = 'none';
+                toggleText.textContent = 'Mostra archivio completo (2024-2025)';
+            }
+        }
+        
+        // Se c'è un hash nell'URL che punta all'archivio, scrolla fino a quella sezione
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.location.hash === '#archivio') {
+                document.getElementById('archivio').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
 
 </body>
 </html>
