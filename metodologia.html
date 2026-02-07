@@ -88,15 +88,15 @@
                                    assecondando le caratteristiche dello strumento.  
                                 </p>
                                 
-                                <h4>3. Backtesting e Validazione Multi-Stadio</h4>
+                                <h4>3. Backtesting e Validazione</h4>
                                 <p>
-                                    Eseguiamo un processo di test stratificato per massimizzare la robustezza:
-                                </p>
-                                <ul style="display: inline-block; text-align: left; margin: 1em auto;">
-                                    <li><strong>Test In-Sample (IS):</strong> Sviluppo iniziale e ottimizzazione parametrica su un dataset storico definito.</li>
-                                    <li><strong>Validazione Out-of-Sample (OOS) o Walk-Forward Analysis (WFA):</strong> Test cruciale su un periodo di dati <em>non utilizzato</em> in fase di sviluppo. È il banco di prova principale contro l'overfitting.</li>
-                                    <li><strong>Stress Test e Analisi di Robustezza:</strong> Verifica del comportamento in condizioni di mercato estreme (crisi, flash crash) e su diversi intervalli temporali o asset simili.</li>
-                                </ul>
+                                    Nonostante l'impegno nell'evitare l'overfitting, la robustezza di una strategia va sempre dimostrata 
+                                    attraverso rigorosi livelli di verifica. Il nostro protocollo prevede <strong>Test In-Sample</strong>, 
+                                    <strong>Walk-Forward Analysis</strong> e una validazione <strong>Out-of-Sample</strong> rigorosa, 
+                                    seguita da un periodo di operatività in demo o con size minima. 
+                                    Questo processo ci permette di scartare i modelli che non mantengono le promesse statistiche, 
+                                    selezionando esclusivamente le strategie più stabili e performanti per l'ambiente reale.
+                                </p> 
                             </article>
 
                             <!-- Sezione 3: Integrazione Portfolio -->
@@ -260,6 +260,7 @@
 
 </body>
 </html>
+
 
 
 
